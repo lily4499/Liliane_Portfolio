@@ -126,68 +126,20 @@
                 <li><strong>Objective:</strong>: The primary goal of this project was to automate our CI/CD pipeline to achieve faster, more reliable deployments by leveraging GitOps principles.</li>
                 <li><strong>Context:</strong>: Our organization was facing challenges with manual deployments, which were time-consuming and prone to errors. We needed a scalable, automated solution to streamline our deployment process for our microservices architecture.</li>
                 <li><strong>Project URL</strong>: <a href="https://medium.com/@lilnya79/gitops-argocd-continuous-delivery-with-jenkins-and-github-8d19ac5ece4c">GitOps-ARGOCD</a></li>
-                <li><b>Tools and Technologies:</b> </li>
-                      <ul> 
-                        <li><strong>GitOps:</strong>:Adopted for its declarative nature and ability to use Git as a single source of truth for infrastructure and application code. </li>
-                        <li><strong>ARGOCD:</strong>: Chosen for its seamless integration with Kubernetes and GitOps workflows to handle continuous delivery.</li>
-                        <li><strong>Jenkins:</strong>: Utilized for its robust CI/CD capabilities to automate the build, test, and deployment process.</li>
-                        <li><strong>GitHub:</strong>: Used for version control, hosting our code repositories and Kubernetes manifests.</li>
-                      </ul>
+                <li><b>Tools and Technologies:</b> 
+                   <img src="assets/img/portfolio/tools1.png" alt="">
+                
+                </li>
+             
+
+              
               </ul>
             </div>
             <div class="portfolio-description"> <br>
               <h2><b>Implementation </b></h2>
               <p>
-                1. GitHub Repository
-   |
-   | 1. Developer commits code to the GitHub repository.
-   v
-2. GitHub Webhook
-   |
-   | 2. GitHub sends a webhook to Jenkins to trigger the build pipeline.
-   v
-3. Jenkins CI/CD Pipeline
-   |
-   | 3. Jenkins pulls the latest code from GitHub.
-   | 4. Jenkins runs tests and builds the application.
-   | 5. Jenkins creates Docker images and pushes them to the container registry.
-   | 6. Jenkins updates Kubernetes manifests in the GitOps repository (if separate from the main repo).
-   v
-4. Container Registry (e.g., Docker Hub or AWS ECR)
-   |
-   | 7. Jenkins pushes the built Docker images to the container registry.
-   v
-5. GitOps Repository (if separate from the main repo)
-   |
-   | 8. Jenkins updates the Kubernetes manifests with the new image tags in the GitOps repository.
-   v
-6. ARGOCD
-   |
-   | 9. ARGOCD continuously monitors the GitOps repository for changes.
-   | 10. ARGOCD syncs the Kubernetes cluster state with the desired state defined in the GitOps repository.
-   v
-7. Kubernetes Cluster
-   |
-   | 11. ARGOCD deploys the updated application to the Kubernetes cluster.
-   v
-8. Nginx Ingress Controller
-   |
-   | 12. Nginx handles incoming traffic and routes it to the appropriate services in the Kubernetes cluster.
-   v
-9. Certbot
-   |
-   | 13. Certbot generates and renews SSL certificates.
-   | 14. Nginx uses these SSL certificates for HTTPS traffic.
-   v
-10. Amazon Route 53 (DNS)
-   |
-   | 15. Route 53 provides DNS resolution for the domain, pointing to the Nginx ingress.
-   v
-11. End Users
-   |
-   | 16. End users access the application via the domain name.
-
-                
+              
+               
               </p>
               <h2><b>Challenges and Solutions:</b>></h2>
               <p>
