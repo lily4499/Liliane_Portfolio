@@ -1102,3 +1102,9 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.blue-bold-link {
+    color: blue;
+    font-weight: bold;
+}
+
