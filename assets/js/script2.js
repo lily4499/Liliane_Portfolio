@@ -1,4 +1,4 @@
-document.getElementById('downloadResumeBtn').addEventListener('click', function() {
+document.getElementById('downloadResumeBtn2').addEventListener('click', function() {
     // Get the resume content
     var resumeContent = document.getElementById('resume').innerHTML;
 
