@@ -21,7 +21,7 @@ document.getElementById('downloadResumeBtn').addEventListener('click', function(
     // Create a link element
     var link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'My_Resume.html';
+    link.download = 'Lili_Resume.html';
 
     // Append the link to the body
     document.body.appendChild(link);
